@@ -41,7 +41,7 @@
 
                     //set up signalr proxy server at signalGRR
                     $(function () {
-                        var connection = $.hubConnection(options.url || "http://signalgrr.apphb.com");
+                        var connection = $.hubConnection(options.url || "https://signalgrr.apphb.com");
                         options.bridge = connection.createProxy(options.proxyName);
 
                         options.bridge.on('receive', function (pkg) {
